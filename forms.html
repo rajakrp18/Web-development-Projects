@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Forms in details </title>
+</head>
+
+<body>
+    <div class="form1">
+        <form action="">
+            <!-- simple form structure for login credentials  -->
+            <label for="email">Enter Email ID</label>
+            <input type="text" id="email" placeholder="enter your email"><br /><br />
+
+            <label for="password">Enter password </label>
+            <input type="password" id="password" placeholder="enter your password"><br /><br />
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <br />
+    <div class="form2">
+        <fieldset><!-- creates a box for the content which is inside  -->
+
+            <legend>This is a basic form</legend> <!-- acts as the heading for the fieldset -->
+
+            <!-- datepicker  -->
+            <label for="datepicker">Choose date</label>
+
+            <input type="date" name="date" id="datepicker"><br /><br />
+            <!-- for option dropdown menu we use select option and not input -->
+            <!-- select button  -->
+
+            <label for="dishes">choose a dish</label>
+            <select name="dishes" id="selector">
+                <option value="maggi">maggi</option>
+                <option value="kurkure">kurkure</option>
+                <option value="lays">lays</option>
+            </select><br /><br />
+
+            <!-- button and submit button and text area-->
+            <button>main hoon button</button><br /><br />
+
+            <input type="submit" name="button" id="button" value="Submit"><br /><br />
+
+            <textarea name="textarea" id="" cols="30" rows="10" placeholder="enter txt here"></textarea>
+
+            <br /><br />
+            <!-- shortnote :name attributes should have same value (gender). This ensures mutual exclusivity, allowing only one option to be selected. -->
+            <!-- radiobutton -->
+            <label for="gender">Gender :</label>&nbsp;
+
+            <label for="radio1">Male</label>
+            <input type="radio" name="gender" id="radio1">
+
+            <label for="radio2">Female</label>
+            <input type="radio" name="gender" id="radio2">
+
+            <label for="radio3">Prefer not to say</label>
+            <input type="radio" name="gender" id="radio3">
+            <br /><br />
+
+            <!-- checkbox, shortnote: for spaces withot line break we can use &nbsp  -->
+            <label for="checkbox">Choose the languages known :</label>&nbsp;
+
+            <label for="checkbox1">English</label>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+
+            <label for="checkbox2">Hindi</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <br /><br />
+
+            <!-- file: option for uploading a file  -->
+            <label for="fileselect">Upload</label>&nbsp;<input type="file" name="fileselect" id="fileselect">
+
+            <br /><br />
+            <!-- image button  -->
+            <input type="image" name="imagebutton" id="imagebutton" src="/images.png" alt="arrowbutton" height="100px"
+                width="100px">
+        </fieldset>
+    </div>
+</body>
+
+</html>
